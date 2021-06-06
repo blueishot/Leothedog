@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Schoolbell-Regular;
+    src: url(Schoolbell-Regular.ttf);
+}
+
+body {
+    font-family: Schoolbell-Regular;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(https://i.pinimg.com/originals/d4/80/c4/d480c40dcb2d74ab9d31d96e8dc3cad1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.menuDog {
+    background-color: #BE8661;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.redesociais:hover, .menuDogImg:hover {
+    opacity: 55%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menuInformations {
+    border: #82370d solid 5px;
+    margin-top: 2%;
+}
+
+.menuInformationsButtons {
+    background-color: #b3b3ab;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.menuInformationsButtons:hover {
+    background-color: #f8f8e2;
+    cursor: pointer;
+}
+
+.redesociais {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 0%;
+    left: 4%;
+}
+
+.conteudo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introducao, .dogInformation, .leoCreditos {
+    border: solid #82370d 5px;
+    font-size: 20px;
+    background-color: #f8f8e2;
+    font-style: italic;
+    letter-spacing: .07em;
+    width: 40%;
+    height: fit-content;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.Leo, .Jonathan {
+    border: solid #82370d 5px;
+    background-color: #f8f8e2;
+    width: 40%;
+    margin-bottom: 40px;
+}
