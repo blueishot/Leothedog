@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Ali em cima é para resetar regras do HTML */
+
 @font-face {
     font-family: Schoolbell-Regular;
     src: url(../Schoolbell-Regular.ttf);
@@ -6,7 +14,6 @@
 body {
     font-family: Schoolbell-Regular;
     display: flex;
-    flex-direction: row-reverse;
     background-image: url(https://i.pinimg.com/originals/d4/80/c4/d480c40dcb2d74ab9d31d96e8dc3cad1.png);
     background-position: center;
     background-size: cover;
@@ -17,16 +24,18 @@ a {
     color: black;
 }
 
+
 .menuDog {
     background-color: #BE8661;
     width: 10%;
-    height: 100%;
+    height: calc(100% - 10px);
     position: fixed;
-    top: 0%;
-    left: 0%;
-    display: flex;
-    flex-direction: column;
+    top: 0;
+    left: 0;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .shibaImg {
@@ -37,11 +46,16 @@ a {
     object-fit: cover;
 }
 
-
-.redesociais:hover, .menuDogImg:hover {
+.redesociais:hover, .dogImg:hover {
     opacity: 55%;
     transition: 1s;
     cursor: pointer;
+}
+
+.menuButtons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .menuInformations {
@@ -49,13 +63,23 @@ a {
     margin-top: 2%;
     margin-bottom: 5%;
     user-select: none;
+    display: flex;
+    align-items: center;
+
+
 }
 
 .menuInformationsButtons {
     background-color: #b3b3ab;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuInformationsButtons, a {
+    font-size: 18px;
 }
 
 .menuInformationsButtons:hover {
@@ -65,16 +89,33 @@ a {
 
 .redesociais {
     object-fit: cover;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 0%;
-    left: 4%;
+    display: flex;
+    justify-content: center;
 }
 
 .gitImg {
     object-fit: cover;
     max-width: 40px;
     max-height: 40px;
+
+}
+
+@media only screen and (max-width: 1024px) {
+   .menuDog {
+       width: 80%;
+   }
+   
+    .shibaImg {
+        object-fit: cover;
+        margin: 0 auto;
+        max-width: unset;
+        max-height: unset;
+        min-width: unset; 
+        min-height: unset;
+        display: flex;
+        justify-content: center;
+
+    }
+    
 
 }
