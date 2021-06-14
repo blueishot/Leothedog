@@ -1,0 +1,45 @@
+@font-face { 
+    font-family: Amiri;
+    src: url(https://fonts.google.com/specimen/Amiri?category=Serif,Sans+Serif&preview.text=LEO%20THE%20DOG&preview.text_type=custom#pairings)
+}
+
+.conteudo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.introducao, .dogInformation, .leoCreditos, .Leo, .Jonathan   {
+    border: solid #82370d 5px;
+    font-size: 20px;
+    background-color: #f8f8e2;
+    font-style: italic;
+    letter-spacing: .07em;
+    width: 40%;
+    height: fit-content;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.introducao {
+    background-color: #e0e0bb;
+    text-align: center;
+}
+
+.dogInformation, .leoCreditos {
+    font-family: Amiri;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.Leo, .Jonathan {
+display: flex;
+justify-content: center;    
+
+}
+
+.jonathanPrint, .leoImg {
+    width: 100%;
+}

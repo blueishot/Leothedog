@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Schoolbell-Regular;
-    src: url(../Schoolbell-Regular.ttf);
+    src: url(/Fontes/Schoolbell-Regular.ttf);
 }
 
 body {
@@ -21,15 +21,18 @@ body {
 a {
     text-decoration: none;
     color: black;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    user-select: none;
 }
 
 .menuDog {
     background-color: #BE8661;
     width: 10%;
     height: calc(100% - 10px);
-    position: fixed;
-    top: 0;
-    left: 0;
     padding: 5px;
     display: flex;
     justify-content: space-between;
